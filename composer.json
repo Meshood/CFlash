@@ -1,0 +1,21 @@
+{
+    "name": "meshood/cflash",    
+    "type": "library",
+    "description": "PHP class for displaying messages on a website.",
+    "keywords": ["module", "framework", "mvc", "micro", "education"],
+    "homepage": "http://dbwebb.se",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Axel Nilsson", 
+            "email": "axelnilsson1994@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": { "meshood\\": "src/" }
+    }
+}

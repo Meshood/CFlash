@@ -1,0 +1,40 @@
+.flash-info
+{
+    background: #DBDBDB;
+    padding: 5px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 70%;
+}
+
+.flash-success
+{
+    background: #AEFF87;
+    padding: 5px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 70%;
+    
+}
+
+.flash-warning
+{
+    background: #F9FF87;
+    padding: 5px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 70%;
+}
+
+.flash-error
+{
+    background: #FF5757;
+    padding: 5px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 70%;
+}
