@@ -13,10 +13,10 @@ $app->router->add('', function() use ($app) {
 
     $app->theme->setTitle("Flash test");
 
-    $app->flash->message('information', 'This is a info message');
-    $app->flash->message('warning', 'This is a warning message');
-    $app->flash->message('success', 'This is a success message');
-    $app->flash->message('error', 'This is a error message');
+    $app->flash->message('information', 'This message is used for displaying information');
+    $app->flash->message('warning', 'This message is used for displaying a warning');
+    $app->flash->message('success', 'This message is used for displaying success');
+    $app->flash->message('error', 'This message is used for displaying an error');
 
 
     $app->theme->setVariable('title', "Flash test");
