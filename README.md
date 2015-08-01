@@ -1,12 +1,14 @@
-CFlash a PHP class for creating and render a message on a website or webapplication.
+CFlash a PHP class for creating and render a message on a website or webapplication built with Anax-MVC.
 ==================================
+
+[![Build Status](https://travis-ci.org/Meshood/CFlash.svg?branch=master)](https://travis-ci.org/Meshood/CFlash)
 
 License
 ----------------------------------
 
 This software is free software and carries a MIT license.
 
-Installation 
+Installation
 ----------------------------------
 
 You will need a version of Anax-MVC for this module to work.
@@ -18,7 +20,7 @@ Once downloaded you will need to make it a service in the framework. You can do 
 2. Or you can take the same code but replace "$this->" with "$di->" and put it in your front controller.
 
 ```
-$this->setShared('flash', function () 
+$this->setShared('flash', function ()
 {
     $flash = new \meshood\Flash\CFlash();
     return $flash;
