@@ -5,68 +5,83 @@ namespace Meshood\Flash;
 class CFlash
 {
     /**
+     * Properties
+     */
+    public $objectCreated;
+    public $messageCreated;
+
+
+
+
+    /**
     * Constructor creates a session flash if it does not exist
-    * 
+    *
     */
     public function __construct()
     {
+        $this->objectCreated = true;
+
         if(!isset($_SESSION['flash']))
         {
             $_SESSION['flash'] = array();
         }
-    } 
-    
-    
-    
-    
+    }
+
+
+
+
     /**
     * Constructor creates a session flash if it does not exist
-    * 
+    *
     */
     public function message($type, $message)
     {
+        $this->messageCreated = $type ."::" . $message;
+
         switch($type)
         {
         case "success":
-            $_SESSION['flash'][] = 
+            $_SESSION['flash'][] =
             [
                 'type' => "success",
                 'message' => $message,
             ];
             break;
-            
+
         case "warning":
-            $_SESSION['flash'][] = 
+            $_SESSION['flash'][] =
             [
                 'type' => "warning",
                 'message' => $message,
             ];
             break;
-            
+
         case "error":
-            $_SESSION['flash'][] = 
+            $_SESSION['flash'][] =
             [
                 'type' => "error",
                 'message' => $message,
             ];
             break;
-            
+
         default:
-            $_SESSION['flash'][] = 
+            $_SESSION['flash'][] =
             [
                 'type' => "info",
                 'message' => $message,
             ];
             break;
+
+
         }
     }
-    
-    
-    
-    
+
+
+
+
    /**
     * Constructor creates a session flash if it does not exist
-    * 
+    *
     */
     public function getMessage()
     {
@@ -86,6 +101,6 @@ class CFlash
         {
             return "<div class='flash-error'>The message system is broken. No message found in session.</div>\n";
         }
-        
+
     }
 }
