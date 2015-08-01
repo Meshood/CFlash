@@ -2,9 +2,7 @@ CFlash a PHP class for creating and render a message on a website or webapplicat
 ==================================
 
 [![Build Status](https://travis-ci.org/Meshood/CFlash.svg?branch=master)](https://travis-ci.org/Meshood/CFlash)
-
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Meshood/CFlash/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Meshood/CFlash/?branch=master)
-
 [![Code Coverage](https://scrutinizer-ci.com/g/Meshood/CFlash/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Meshood/CFlash/?branch=master)
 
 License
