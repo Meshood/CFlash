@@ -34,6 +34,12 @@ $app->flash->message('success', 'This message is used for displaying success');
 $app->flash->message('error', 'This message is used for displaying an error');
 ```
 
+Then use this code to get the html for the message(s).
+
+```
+$app->flash->getMessage(),
+```
+
 If your want to test so the module works just copy the test.php file from the webroot in the module to your Anax-MVC webroot and
 point your browser to it.
 
